@@ -1,0 +1,20 @@
+<mvc:View controllerName="yasRoutingEx.controller.Screen2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="S2">
+				<!--<List items="{paraModel}">-->
+					<!--<StandardListItem title="{sampleText}"></StandardListItem>-->
+					<Text text="{paraModel>/sampleText}"></Text>
+				<!--</List>-->
+				<footer>
+					<Toolbar>
+						<Button text = "Previous" press = "handlePrevious"/>
+						<ToolbarSpacer/>
+						<Button text = "Next" press="handleNext"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
